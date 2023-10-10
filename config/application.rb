@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative "boot"
 
 require "rails/all"
@@ -12,9 +14,9 @@ module Granite
     config.load_defaults 7.0
 
     config.generators do |g|
-      g.test_framework  :rspec, fixture: false
-      g.view_specs      false
-      g.helper_specs    false
+      g.test_framework :rspec, fixture: false
+      g.view_specs false
+      g.helper_specs false
     end
 
     # Configuration for the application, engines, and railties goes here.
